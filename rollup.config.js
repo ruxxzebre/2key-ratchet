@@ -1,4 +1,4 @@
-import typescript from "rollup-plugin-typescript2";
+const typescript = require("rollup-plugin-typescript2");
 const pkg = require("./package.json");
 
 const banner = [
@@ -10,9 +10,10 @@ const banner = [
 const input = "src/index.ts";
 const external = Object.keys(pkg.dependencies).concat(["events"]);
 
-export default {
+module.exports = {
   input,
   plugins: [
+    // @ts-ignore
     typescript({
       check: true,
       clean: true,
