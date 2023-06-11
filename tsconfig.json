@@ -10,6 +10,9 @@
     "experimentalDecorators": true,
   },
   "exclude": [
-    "dist"
+    "dist",
+    "examples",
+    "diagrams",
+    "test"
   ]
 }
