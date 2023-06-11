@@ -5,6 +5,7 @@
     "outDir": "./out",
     "importHelpers": true,
     "strict": true,
+    "useDefineForClassFields": false,
     "strictPropertyInitialization": false,
     "experimentalDecorators": true,
   },
