@@ -10,7 +10,8 @@
 import { Convert } from "pvtsutils";
 export const SIGN_ALGORITHM_NAME = "ECDSA";
 export const DH_ALGORITHM_NAME = "ECDH";
-export const SECRET_KEY_NAME = "AES-CBC";
+export const SECRET_KEY_NAME = "AES-GCM";
+export const SECRET_KEY_LENGTH: number | null = 256;
 export const HASH_NAME = "SHA-256";
 export const HMAC_NAME = "HMAC";
 

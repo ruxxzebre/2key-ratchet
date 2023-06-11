@@ -1,13 +1,12 @@
 // tslint:disable: no-console
 
-import { Crypto } from "@peculiar/webcrypto";
 import * as DKeyRatchet from "..";
 import { Client } from "./client";
 import { Server } from "./server";
+import { WebCryptoEngine, WebCryptoEngineName } from "../src/crypto/webcrypto_engine";
 
 async function main() {
-  const crypto = new Crypto();
-  DKeyRatchet.setEngine("@peculiar/webcrypto", crypto);
+  DKeyRatchet.setEngine(WebCryptoEngineName, WebCryptoEngine)
 
   const server = await Server.create(1);
   server.on("listening", (address) => {

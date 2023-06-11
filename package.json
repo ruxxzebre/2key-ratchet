@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PeculiarVentures/2key-ratchet.git"
+    "url": "git+https://github.com/ruxxzebre/2key-ratchet.git"
   },
   "keywords": [
     "diffie-hellman",

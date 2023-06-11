@@ -8,11 +8,11 @@
  */
 
 import { combine, Convert } from "pvtsutils";
-import { HASH_NAME, HMAC_NAME, SECRET_KEY_NAME } from "../const";
+import { HASH_NAME, HMAC_NAME, SECRET_KEY_LENGTH, SECRET_KEY_NAME } from "../const";
 import { HMACCryptoKey } from "../type";
 import { getEngine } from "./crypto";
 
-const AES_ALGORITHM = { name: "AES-CBC", length: 256 };
+const AES_ALGORITHM = { name: SECRET_KEY_NAME, length: SECRET_KEY_LENGTH };
 
 export class Secret {
 
