@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@peculiar/webcrypto':
+    specifier: ^1.4.3
+    version: 1.4.3
   pvtsutils:
     specifier: ^1.0.10
     version: 1.0.10
@@ -12,9 +15,6 @@ dependencies:
     version: 1.0.15
 
 devDependencies:
-  '@peculiar/webcrypto':
-    specifier: ^1.1.1
-    version: 1.1.1
   '@types/chai':
     specifier: ^4.2.11
     version: 4.2.11
@@ -313,25 +313,25 @@ packages:
       asn1js: 3.0.5
       pvtsutils: 1.3.2
       tslib: 2.5.3
-    dev: true
+    dev: false
 
   /@peculiar/json-schema@1.1.12:
     resolution: {integrity: sha512-coUfuoMeIB7B8/NMekxaDzLhaYmp0HZNPEjYRm9goRou8UZIC3z21s0sL9AWoCw4EG876QyO3kYrc61WNF9B/w==}
     engines: {node: '>=8.0.0'}
     dependencies:
       tslib: 2.5.3
-    dev: true
+    dev: false
 
-  /@peculiar/webcrypto@1.1.1:
-    resolution: {integrity: sha512-Bu2XgOvzirnLcojZYs4KQ8hOLf2ETpa0NL6btQt5NgsAwctI6yVkzgYP+EcG7Mm579RBP+V0LM5rXyMlTVx23A==}
+  /@peculiar/webcrypto@1.4.3:
+    resolution: {integrity: sha512-VtaY4spKTdN5LjJ04im/d/joXuvLbQdgy5Z4DXF4MFZhQ+MTrejbNMkfZBp1Bs3O5+bFqnJgyGdPuZQflvIa5A==}
     engines: {node: '>=10.12.0'}
     dependencies:
       '@peculiar/asn1-schema': 2.3.6
       '@peculiar/json-schema': 1.1.12
-      pvtsutils: 1.0.10
-      tslib: 1.13.0
+      pvtsutils: 1.3.2
+      tslib: 2.5.3
       webcrypto-core: 1.7.7
-    dev: true
+    dev: false
 
   /@protobufjs/aspromise@1.1.2:
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -507,7 +507,7 @@ packages:
       pvtsutils: 1.3.2
       pvutils: 1.1.3
       tslib: 2.5.3
-    dev: true
+    dev: false
 
   /assert-plus@1.0.0:
     resolution: {integrity: sha512-NfJ4UzBCcQGLDlQq7nHxH+tv3kyZ0hHQqF5BO6J7tNJeP5do1llPr8dZ8zHonfhAu0PHAdMkSo+8o0wxg9lZWw==}
@@ -1914,17 +1914,18 @@ packages:
     resolution: {integrity: sha512-8ZKQcxnZKTn+fpDh7wL4yKax5fdl3UJzT8Jv49djZpB/dzPxacyN1Sez90b6YLdOmvIr9vaySJ5gw4aUA1EdSw==}
     dependencies:
       tslib: 1.13.0
+    dev: false
 
   /pvtsutils@1.3.2:
     resolution: {integrity: sha512-+Ipe2iNUyrZz+8K/2IOo+kKikdtfhRKzNpQbruF2URmqPtoqAs8g3xS7TJvFF2GcPXjh7DkqMnpVveRFq4PgEQ==}
     dependencies:
       tslib: 2.5.3
-    dev: true
+    dev: false
 
   /pvutils@1.1.3:
     resolution: {integrity: sha512-pMpnA0qRdFp32b1sJl1wOJNxZLQ2cbQx+k6tjNtZ8CpvVhNqEPRgivZ2WOUev2YMajecdH7ctUPDvEe87nariQ==}
     engines: {node: '>=6.0.0'}
-    dev: true
+    dev: false
 
   /qs@6.5.3:
     resolution: {integrity: sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==}
@@ -2298,10 +2299,11 @@ packages:
 
   /tslib@1.13.0:
     resolution: {integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==}
+    dev: false
 
   /tslib@2.5.3:
     resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
-    dev: true
+    dev: false
 
   /tsprotobuf@1.0.15:
     resolution: {integrity: sha512-4qZ9W4z7ocnCjf2z1QVdDWU48ymb/klsvUfpWZMwYmtBD4O1geK2jIoMJnBpnNE+VEwryzFia+OY6vv0sEXJ6w==}
@@ -2410,7 +2412,7 @@ packages:
       asn1js: 3.0.5
       pvtsutils: 1.3.2
       tslib: 2.5.3
-    dev: true
+    dev: false
 
   /which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
